@@ -1,10 +1,4 @@
-FROM node:18-alpine
-
-WORKDIR /app
-
-RUN npm install -g n8n
-
-COPY . .
+FROM n8nio/n8n:latest
 
 EXPOSE 5678
 
